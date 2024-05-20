@@ -1,0 +1,247 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #1A1A1A;
+}
+
+span, label{
+    font-family: "Roboto", sans-serif;
+}
+
+input{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #A8A8A8;
+    border: none;
+    outline: none;
+}
+
+.window-block-name span{
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.window-block-name{
+    margin-bottom: 10px;
+}
+
+.content{
+    width: 100%;
+}
+
+.content-inner{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.content-left{
+    flex: 0 0 20%;
+}
+
+.notes-block{
+    width: 100%;
+    min-height: 100%;
+    height: 95vh;
+}
+
+.notes-block .window-block{
+    overflow-y: auto;
+}
+
+.window-block{
+    background-color: #1D1D1D;
+    border-radius: 25px;
+    box-shadow: 0px 0px 14px 7px rgba(0,0,0,0.35);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 90%;
+}
+
+.window-block-inner{
+    margin: 10px;
+    width: calc(100% - 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.note-block{
+    background-color: #272727;
+    border-radius: 25px;
+    flex:  0 0 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.note-block:hover{
+    background-color: #353535;
+}
+
+.note-block span{
+    color: #fff;
+    user-select: none;
+}
+
+.note-active-block{
+    background-color: #fff;
+}
+
+.note-active-block:hover{
+    background-color: #fff;
+}
+
+.note-active-block span{
+    color: #000;
+}
+
+.content-right{
+    flex: 0 0 78%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.actions-block{
+    flex: 0 0 40%;
+}
+
+.actions-block .window-block-inner{
+    justify-content: space-around;
+}
+
+.action-block{
+    flex: 0 0 35%;
+    padding: 10px;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity .3s ease;
+    text-align: center;
+}
+
+.action-block:hover{
+    opacity: 1;
+}
+
+.action-block span{
+    user-select: none;
+    font-weight: 600;
+}
+
+#action-d{
+    background-color: #ff0000;
+}
+
+#action-s{
+    background-color: #00FF1A;
+}
+
+.notification-block{
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 79px;
+    margin: 0;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.notification-left{
+    flex: 0 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-right{
+    flex: 0 0 75%;
+    text-align: center;
+}
+
+.notification-right span{
+    color: #fff;
+}
+
+#notification-icon-err{
+    display: none;
+}
+
+.note-edit-block{
+    flex: 0 0 100%;
+    margin-top: 50px;
+}
+
+.note-edit-block .window-block-inner{
+    justify-content: flex-start;
+}
+
+.note-name-edit{
+    flex: 0 0 20%;
+}
+
+.input-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-block label, .input-block input{
+    flex: 0 0 100%;
+}
+
+.input-block label{
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.note-content-edit{
+    flex: 0 0 100%;
+    margin-top: 10px;
+}
+
+.note-content-edit textarea{
+    width: calc(100% - 36px);
+    height: 100%;
+    background-color: #252525;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    color: #fff;
+    height: 300px;
+}
+
+.note-craete-block{
+    background-color: #1D1D1D;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 calc(100% - 2px);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.note-craete-block svg{
+    margin-right: 10px;
+}
+
+.note-craete-block span{
+    color: #fff;
+}
